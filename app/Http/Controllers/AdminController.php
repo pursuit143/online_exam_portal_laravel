@@ -8,7 +8,7 @@ class AdminController extends Controller
 {
     public function index()
     {
-        return view('admin.adminDashboard');
+        return view('admin.dashboard');
     }
 
     public function showLoginForm()
@@ -24,5 +24,9 @@ class AdminController extends Controller
     public function passwordResetForm()
     {
         return view('admin.auth.reset');
+    }
+    public function showCreateExam()
+    {
+        return view('admin.createExam');
     }
 }
